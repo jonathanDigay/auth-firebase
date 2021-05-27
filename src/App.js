@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 import {AuthProvider} from "./Context/context"
 import {Privateroutes} from "./Private/Privateroutes"
 // components
-import Home from "./Components/Home"
+import Home from "./Components/home.js"
 import SignIn from "./Components/Signin"
 import SignUp from "./Components/Signup"
 import Profile from "./Components/Profile"

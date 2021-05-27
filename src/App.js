@@ -1,5 +1,4 @@
 import React from "react"
-import {} from "react-router-dom"
 import "./app.scss"
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 import {AuthProvider} from "./Context/context"

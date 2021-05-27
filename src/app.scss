@@ -1,0 +1,26 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+button,input{
+  border:none;
+  outline: none;
+}
+.error{
+  background: rgb(241, 131, 131);
+  color:red;
+  padding:20px;
+}
+
+$primary:rgb(250, 3, 250);
+$secondary:rgb(196, 191, 191);
+
+@import "./Components/home.scss";
+@import "./Components/signin.scss";
+@import "./Components/signup.scss";
+@import "./Components/dashboard.scss"

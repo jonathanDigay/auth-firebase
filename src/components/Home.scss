@@ -1,7 +1,23 @@
 .home_container{
+  position: relative;
   height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.vdbg{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
   width:100%;
-  background: linear-gradient(90deg, rgb(4, 94, 146),rgb(120, 202, 250))
+  object-fit: cover;
+  -o-object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  z-index: -1;
 }
 
-@import "./Header.scss"
+@import "./Home/navbar.scss";
+@import "./Home/hero.scss"

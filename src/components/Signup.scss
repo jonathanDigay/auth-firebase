@@ -1,69 +1,116 @@
+
 .signup_main{
-  height:100vh;
-  width:100%;
-  max-width: 1800px;
- margin:auto;
-  background: linear-gradient(90deg, rgb(4, 94, 146),rgb(120, 202, 250)) ;
-  padding:0 10px;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0, 0.1);
 
-  .signup_container{
-    position: relative;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    min-height:300px;
-    max-width:500px;
-    background: rgb(40, 195, 206);
-    border-radius: 5px;
-    box-shadow: -2px 4px 15px 1px #333;
-    text-align: center;
-    padding:20px;
+.signup_container{
+  position: fixed;
+  left:50%;
+  top:50%;
+  background: rgba(0,0,0, 1);
+  transform: translate(-50%,-50%);
+  width:500px;
+  min-height:300px;
+  z-index: 1000;
+  border-radius: 5px 0 5px 5px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  text-align: center;
+  color:$secondary;
 
-    display:grid;
-    grid-template-rows: auto 1fr auto;
+  @media (max-width:500px) {
+    width:400px;
   }
-  h3{
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-weight: 500;
+  @media (max-width:400px) {
+    width:300px;
   }
+  @media (max-width:300px) {
+    width:250px;
+  }
+  h1{
+    font-weight: 300;
+    padding:10px;
+  }
+
   form{
-    display: flex;
-    gap: 20px;
-    text-align: left;
-    justify-content: space-between;
-   flex-direction: column;
-   margin: 10px 0;
-
-   .input_field{
-    position: relative;
-   }
-   input{
-     display: block;
-     width: 100%;
-     height:40px;
-     border-radius: 5px;
-   }
-   button{
-     height:40px;
-     font-size: 18px;
-     border-radius: 5px;
-     letter-spacing: 1px;
-     background:rgb(8, 105, 138);
-     color:white;
-     cursor: pointer;
-     &:hover{
-      background: rgb(5, 131, 204);
-     }
-   }
-
-   span{
-     position: absolute;
-     right:0;
-     bottom: 0;
-     color:rgb(247, 66, 66);
-     font-size: 12px;
-     transform: translateY(14px);
-   }
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+    .input_box{
+      text-align: left;
+      height:40px;
+      margin-bottom: 20px;
+    input{
+      display: block;
+      height:100%;
+      width:100%;
+    padding:0 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+    }
+    }
+    button{
+      height:40px;
+      width:100px;
+      position: relative;
+      left:50%;
+      transform: translate(-50%,0);
+      background:rgb(235, 35, 235);
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      margin:20px 0;
+      font-size: 20px;
+    }
   }
+  p{
+    margin: 10px 0;
+
+    .showsignin{
+      color:$primary;
+      cursor:pointer;
+      border-bottom: 1px solid $secondary;
+      &:hover{
+        opacity:.7;
+      }
+    }
+  }
+  .social_auth{
+    display: flex;
+     justify-content: center;
+    i{
+      margin: 0 10px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .facebook{
+      color:rgb(92, 92, 241);
+    }
+    .google{
+      color:rgb(255, 10, 10);
+    }
+  }
+
+}
+.exit{
+  position: absolute;
+  font-size: 30px;
+  top:10px;
+  left:20px;
+  transform: translate(-50%,0);
+  color:$secondary;
+  cursor:pointer;
+  display: inline-block;
+  padding:5px;
+  z-index: 2000;
+  border-radius: 5px 5px 5px 0;
+  &:hover{
+    color:$primary;
+  }
+}
 }

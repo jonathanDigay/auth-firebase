@@ -1,8 +1,8 @@
 import React from "react"
-import "./app.scss"
 import {Switch, Route } from "react-router-dom"
 import { AuthProvider } from "./userscontext/context"
 import { Privateroutes } from "./private/privateroutes"
+import "./app.scss"
 // components
 import SignIn from "./components/signin"
 import SignUp from "./components/signup"

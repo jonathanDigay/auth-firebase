@@ -1,13 +1,13 @@
 import React from "react"
 import {Switch, Route } from "react-router-dom"
-import { AuthProvider } from "../userscontext/context"
-import { Privateroutes } from "../private/privateroutes"
-import "./app.scss"
+import { AuthProvider } from "./userscontext/context"
+import { Privateroutes } from "./private/privateroutes"
+import "./components/app.scss"
 // components
-import SignIn from "./signin"
-import SignUp from "./signup"
-import Profile from "./profile"
-import Home from "./home"
+import SignIn from "./components/signin"
+import SignUp from "./components/signup"
+import Profile from "./components/profile"
+import Home from "./components/home"
 const App = () => {
     return (
         <>

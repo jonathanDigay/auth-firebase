@@ -1,6 +1,6 @@
 import React from "react"
 import "./app.scss"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import {Switch, Route } from "react-router-dom"
 import { AuthProvider } from "./userscontext/context"
 import { Privateroutes } from "./private/privateroutes"
 // components
@@ -11,7 +11,6 @@ import Home from "./components/home"
 const App = () => {
     return (
         <>
-            <Router>
                 <Switch>
                     <AuthProvider>
                         <Route exact path="/" component={Home} />
@@ -20,7 +19,6 @@ const App = () => {
                         <Privateroutes path="/profile" component={Profile} />
                     </AuthProvider>
                 </Switch>
-            </Router>
         </>
     )
 }

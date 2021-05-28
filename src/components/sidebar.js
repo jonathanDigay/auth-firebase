@@ -1,6 +1,7 @@
 import React, {useContext,useState} from 'react'
 import {AuthContext} from "../userscontext/context"
 import {useHistory} from "react-router-dom"
+
 export default function Sidebar() {
   const {LogOut} =useContext(AuthContext)
   const [error,setError]=useState()
@@ -21,7 +22,7 @@ export default function Sidebar() {
     <div className="sidebar_main">
       <div className="users_profile">
         <div className="users_image">
-          <img src="" alt="Users" />
+          
         </div>
         <h1>Jonathan</h1>
         <p>{error}</p>

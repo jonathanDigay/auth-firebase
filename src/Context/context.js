@@ -28,7 +28,6 @@ function Google(){
 }
 useEffect(()=>{
   const unsubscribe=auth.onAuthStateChanged(user=>setCurrentUser(user))
-  console.log(auth.onAuthStateChanged)
   return unsubscribe
 },[])
 const value={

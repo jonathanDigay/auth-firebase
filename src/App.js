@@ -7,7 +7,7 @@ import { Privateroutes } from "./Private/Privateroutes"
 import SignIn from "./components/Signin"
 import SignUp from "./components/Signup"
 import Profile from "./components/Profile"
-import Home from "./components/home"
+import Home from "./components/Home"
 const App = () => {
     return (
         <>

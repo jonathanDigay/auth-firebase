@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import {BrowserRouter} from "react-router-dom"
 
 // application
-import App from "./app"
+import App from "./components/app"
 
 ReactDOM.render(
   <BrowserRouter><App/></BrowserRouter>,

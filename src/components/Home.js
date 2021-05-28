@@ -2,8 +2,8 @@ import React from 'react'
 import VDBG from "./assets/vdbg.mp4"
 
 // home components
-import NavBar from "./homecomponents/navBar"
-import Hero from "./homecomponents/hero"
+import NavBar from "./navBar"
+import Hero from "./hero"
 
 export default function Home(){
   return (

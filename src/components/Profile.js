@@ -1,6 +1,6 @@
 import React from 'react'
-import SideBar from "./usersprofile/sidebar"
-import Body from "./usersprofile/body"
+import SideBar from "./sidebar"
+import Body from "./body"
 
 export default function Dashboard() {
   return (

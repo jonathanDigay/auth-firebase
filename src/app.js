@@ -1,12 +1,12 @@
-import React from "react"
-import {Switch, Route } from "react-router-dom"
-import { AuthProvider } from "./userscontext/context"
-import { Privateroutes } from "./private/privateroutes"
+import React from "react";
+import {Switch, Route } from "react-router-dom";
+import { AuthProvider } from "./userscontext/context";
+import { Privateroutes } from "./private/privateroutes";
 // style
 import "./components/app.scss";
 // components
-import SignIn from "./components/signin"
-import SignUp from "./components/signup"
+import SignIn from "./components/signin";
+import SignUp from "./components/signup";
 import Profile from "./components/profile"
 import Home from "./components/home"
 const App = () => {

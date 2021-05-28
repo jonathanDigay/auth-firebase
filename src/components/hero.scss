@@ -1,7 +1,8 @@
 .hero_main{
   display: grid;
-  place-items: center;
-
+  
+  justify-content: center;
+  
   .hero_container{
     min-height: 300px;
     max-width:600px;

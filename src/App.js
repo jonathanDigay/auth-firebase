@@ -1,7 +1,7 @@
 import React from "react"
 import "./app.scss"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { AuthProvider } from "./Context/context"
+import { AuthProvider } from "./context/context"
 import { Privateroutes } from "./Private/Privateroutes"
 // components
 import SignIn from "./components/Signin.js"

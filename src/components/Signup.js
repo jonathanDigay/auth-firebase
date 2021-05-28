@@ -1,5 +1,5 @@
 import React,{useContext,useState,useRef} from 'react'
-import {AuthContext} from "../Context/context"
+import {AuthContext} from "../context/context"
 import VDBG from "./assets/vdbg.mp4"
 import {Link,useHistory} from "react-router-dom" 
 

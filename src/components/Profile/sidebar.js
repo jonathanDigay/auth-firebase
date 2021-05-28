@@ -1,5 +1,5 @@
 import React, {useContext,useState} from 'react'
-import {AuthContext} from "../../Context/context"
+import {AuthContext} from "../../userscontext/context"
 import {useHistory} from "react-router-dom"
 export default function Sidebar() {
   const {LogOut} =useContext(AuthContext)

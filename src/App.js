@@ -2,7 +2,7 @@ import React from "react"
 import "./app.scss"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "./userscontext/context"
-import { Privateroutes } from "./Private/Privateroutes"
+import { Privateroutes } from "./private/privateroutes"
 // components
 import SignIn from "./components/Signin"
 import SignUp from "./components/Signup"

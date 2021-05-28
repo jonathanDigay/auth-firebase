@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch, Route } from "react-router-dom";
 import { AuthProvider } from "./userscontext/context";
-import { Privateroutes } from "./private/privateroutes";
+import { Privateroutes } from "./privateroute/privateroutes";
 // style
 import "./components/app.scss";
 // components

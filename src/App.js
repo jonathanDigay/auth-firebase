@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "./userscontext/context"
 import { Privateroutes } from "./Private/Privateroutes"
 // components
-import SignIn from "./components/Signin.js"
-import SignUp from "./components/Signup.js"
-import Profile from "./components/Profile.js"
-import Home from "./components/home.js"
+import SignIn from "./components/Signin"
+import SignUp from "./components/Signup"
+import Profile from "./components/Profile"
+import Home from "./components/home"
 const App = () => {
     return (
         <>

@@ -7,7 +7,7 @@ export default function Signup() {
   const {SignUp,currentUser}=useContext(AuthContext)
   const usernameRef=useRef()
   const emailRef=useRef()
-  const passwordRef=useRef()
+  const passwordRef=useRef()  
   const confirmPasswordRef=useRef()
   const [errors,setErrors]=useState()
   const [loading,setLoading]=useState(false)

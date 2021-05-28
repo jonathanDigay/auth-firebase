@@ -7,6 +7,7 @@ import Hero from "./HomeComponents/Hero"
 
 export default function Home(){
   return (
+    <>
     <div className="home_container">
       <video autoPlay loop muted className="vdbg">
         <source  src={VDBG} />
@@ -14,5 +15,6 @@ export default function Home(){
         <NavBar/>n
         <Hero/>
     </div>
+    </>
   )
 }

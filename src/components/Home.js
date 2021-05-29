@@ -12,7 +12,7 @@ export default function Home(){
       <video autoPlay loop muted className="vdbg">
         <source  src={VDBG} />
       </video>
-        <NavBar/>n
+        <NavBar/>
         <Hero/>
     </div>
     </>

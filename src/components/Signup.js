@@ -4,7 +4,7 @@ import VDBG from "./assets/vdbg.mp4"
 import {Link,useHistory} from "react-router-dom" 
 
 export default function Signup() {
-  const {SignUp,currentUser}=useContext(AuthContext)
+  const {SignUp,Facebook,Google}=useContext(AuthContext)
   const usernameRef=useRef()
   const emailRef=useRef()
   const passwordRef=useRef()  
@@ -32,6 +32,19 @@ export default function Signup() {
     }
     setLoading(false)
   }
+
+  const onSocialSignIn=async(provider)=>{
+    try{
+       await provider()
+       history.push("/profile")
+       setErrors("")
+       setLoading(true)
+    }catch{
+        setErrors("failed to sign in")
+    }
+    setLoading(false)
+  }
+
   return (
     <div className="signup_main">
              <video autoPlay loop muted className="vdbg">
@@ -41,7 +54,6 @@ export default function Signup() {
        <div className="signup_container">
            <h1> Sign Up </h1>
            {errors &&<p className="error">{errors}</p> }
-           <p>{currentUser && currentUser.email }</p>
            <form onSubmit={onSignUp}>
            <div className="input_box">
                  <label >Username</label>
@@ -68,9 +80,8 @@ export default function Signup() {
            </form>
            <p>or</p>
            <div className="social_auth">
-             <i className="fab fa-facebook facebook"></i>
-             <i className="fab fa-google google"></i>
-
+             <i className="fab fa-facebook facebook" onClick={()=>onSocialSignIn(Facebook)}></i>
+             <i className="fab fa-google google" onClick={()=>onSocialSignIn(Google)}></i>
            </div>
            <p>Already have an account? <Link to="/signin" className="showsignin" >Sign In</Link></p>
        </div>

@@ -1,5 +1,5 @@
 import {createContext, useEffect,useState} from "react"
-import {auth,facebookProvider,googleProvider,githubProvider} from "../firebase"
+import {auth,facebookProvider,googleProvider} from "../firebase"
 
 
 export const AuthContext=createContext()
@@ -20,9 +20,6 @@ function LogOut(){
 function Facebook(){
   return auth.signInWithPopup(facebookProvider)
 }
-function GitHub(){
-  return auth.signInWithPopup(githubProvider)
-}
 function Google(){
   return auth.signInWithPopup(googleProvider)
 }
@@ -36,7 +33,6 @@ const value={
   LogIn,
   LogOut,
   Facebook,
-  GitHub,
   Google,
 }
   return(

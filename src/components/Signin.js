@@ -4,7 +4,7 @@ import VDBG from "./assets/vdbg.mp4"
 import {Link,useHistory} from "react-router-dom"
 
 export default function Signin() {
-  const {LogIn,Facebook,Google,Github}=useContext(AuthContext)
+  const {LogIn,Facebook,Google}=useContext(AuthContext)
   const emailRef=useRef()
   const passwordRef=useRef()
   const [errors,setErrors]=useState()
@@ -35,6 +35,7 @@ export default function Signin() {
         setErrors("failed to sign in")
     }
     setLoading(false)
+
   }
 
   return (
@@ -63,7 +64,6 @@ export default function Signin() {
            <div className="social_auth">
              <i className="fab fa-facebook facebook" onClick={()=>onSocialSignIn(Facebook)}></i>
              <i className="fab fa-google google" onClick={()=>onSocialSignIn(Google)}></i>
-             <i className="fab fa-github" onClick={()=>onSocialSignIn(Github)}></i>
            </div>
            <p>Need to create account? <Link to="/signup" className="showsignup" >Sign Up</Link></p>
        </div>

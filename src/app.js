@@ -5,10 +5,10 @@ import { Privateroutes } from "./privateroute/privateroutes"
 // style
 import "./components/app.scss"
 // components
-import SignIn from "./components/signin"
-import SignUp from "./components/signup"
-import Profile from "./components/profile"
-import Home from "./components/home"
+import SignIn from "./components/Signin"
+import SignUp from "./components/Signup"
+import Profile from "./components/Profile"
+import Home from "./components/Home"
 const App = () => {
     return (
         <>
